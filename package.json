@@ -1,0 +1,30 @@
+{
+  "name": "node-todo",
+  "version": "0.0.0",
+  "description": "Simple todo application.",
+  "main": "server.js",
+  "author": "Pradeep Talwar",
+  "dependencies": {
+    "bcrypt-nodejs": "latest",
+    "body-parser": "~1.4.3",
+    "connect-flash": "^0.1.1",
+    "express": "~4.6.1",
+    "express-session": "^1.12.1",
+    "fs": "0.0.2",
+    "jsonwebtoken": "^5.4.1",
+    "method-override": "~2.1.1",
+    "mongodb-uri": "^0.9.7",
+    "mongoose": "~3.8.13",
+    "morgan": "~1.1.1",
+    "node-yelp": "0.0.3",
+    "passport": "latest",
+    "passport-facebook": "~1.0.2",
+    "passport-google-oauth": "~0.1.5",
+    "passport-local": "latest",
+    "passport-twitter": "~1.0.2",
+    "rx": "^4.0.7",
+    "rx-node": "^1.0.1",
+    "util": "^0.10.3",
+    "yelp": "^1.0.0"
+  }
+}

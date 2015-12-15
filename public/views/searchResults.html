@@ -1,0 +1,21 @@
+<div ng-include src="'/views/navBar.html'"></div>
+<div class="container">
+<h1 class="page-header">SearchResults:&emsp;<span ng-if="!main.loggedIn">(Please login to RSVP for bar choices)</span></h1>
+<!--<div ng-if="$state.includes('home')">No Results</div>-->
+<div id="searchResult">
+<div ng-repeat="bar in main.barList" >
+        <div class="row well">
+            <div class="col-sm-12">
+                <a ng-href={{bar.url}} target="_blank"><img ng-src={{bar.img}} alt={{bar.name}} width="150" height="150">
+                </img></a>&emsp;&emsp;<a ng-href={{bar.url}} target="_blank">{{bar.name}}</a>&emsp;&emsp;
+                <span ng-if="main.loggedIn">
+                	<button ng-click="main.subscribe($index,bar._id)" class="btn btn-info">{{bar.subscribers.length}}&emsp;Going
+                	</button>
+                </span>
+            <p>{{bar.review}}</p>
+            </div>
+    </div>
+</div>
+</div>
+<a ui-sref="home"><h1 class="page-header">Back to Homepage</h1></a>
+</div>

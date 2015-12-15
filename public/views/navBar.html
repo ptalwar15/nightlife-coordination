@@ -1,0 +1,23 @@
+ <header ng-controller="MainController as main">
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container" >
+        <div class="navbar-header" >
+            <a class="navbar-brand"
+               ui-sref="home" >Nightlife Coordination App
+            </a >
+        </div >
+        <ul class="nav navbar-nav navbar-left">
+                <li ng-if=!main.loggedIn ui-sref-active="active"><a ui-sref="signup">Signup</a></li>
+                <li ng-if=!main.loggedIn ui-sref-active="active"><a ui-sref="login">Login</a></li>
+        </ul>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li ng-if="main.state.current.name=='searchResults'" ui-sref-active="active"><a ui-sref="home">Back to Search</a></li>
+                <li ui-sref-active="active"><a ui-sref="searchResults">Search Results</a></li>
+               <li ng-if="main.loggedIn"><a href="#" ng-click="main.doLogout()">Logout</a></li>
+
+            </ul>
+        </div>
+    </div >
+</nav >
+</header>

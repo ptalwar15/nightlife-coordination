@@ -1,0 +1,56 @@
+<!-- index.html -->
+<!doctype html>
+
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app= "nightlife">
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <!--<base href="/">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+    <title>Nightlife Coordination App</title>
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+    <link rel="stylesheet" href="css/style.css"> <!-- custom styles -->
+    <style>
+       html 					{ overflow-y:scroll; }
+		body 					{ padding-top:10px; background-color: red}
+    </style>
+
+    <!-- JS -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script> -->
+    <script src="http://code.angularjs.org/1.4.0/angular.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-messages.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js">
+➥       </script>
+       <script data-require="chart.js@0.2.0" data-semver="0.2.0" src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ui-router-extras/0.1.0/ct-ui-router-extras.min.js"></script>
+        <script src="http://code.angularjs.org/1.4.0/angular-route.min.js"></script>
+        <script src="http://code.angularjs.org/1.4.0/angular-resource.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-cookies.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-strap/2.3.6/angular-strap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-strap/2.3.6/angular-strap.tpl.min.js"></script>
+    <!-- ANGULAR CUSTOM -->
+    <script src="js/core.js"></script> <!-- load our main application -->
+     <script src="js/routes.js"></script>
+    <script src="js/controllers/main.js"></script> <!-- load up our controller -->
+    <script src="js/controllers/userCtrl.js"></script> <!-- load up our controller -->
+
+
+    <script src="js/services/barlist.js"></script> <!-- load our todo service -->
+    <script src="js/services/authService.js"></script>
+    <script src="js/services/userService.js"></script>
+
+    
+</head>
+    
+ 
+<body>
+    <div ui-view></div>
+   
+</body>
+</html>
