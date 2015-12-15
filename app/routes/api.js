@@ -11,7 +11,6 @@ module.exports = function(app,express) {
 	//Routes that don't need authentication outside the middleware that checks authentication token
 	//============================================================================================
 	  apiRouter.get('/bars', function(req,res) {
-        //Use mongoose to all todos in the database
         console.log(req.query.location);
         var location = JSON.parse(req.query.location);
         //var obj = jQuery.parseJSON(location);
