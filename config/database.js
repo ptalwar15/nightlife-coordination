@@ -6,7 +6,7 @@ module.exports = {
         port: '57214',
         db: 'nightlife',
         connectionString: function(){
-            return "mongodb://localhost:27017/nightlife"
+            return "mongodb://ptalwar15:Coolit12@ds029605.mongolab.com:29605/nightlife"
         },
         options: {
             server:{
